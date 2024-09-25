@@ -1,0 +1,271 @@
+@import './blocks/*.sass'
+
+
+//-------------------
+html 
+    scroll-behavior: smooth
+a
+    // color: $color-black
+    text-decoration: none
+//----font-----
+.poppins-thin 
+    font-family: "Poppins", sans-serif
+    font-weight: 100
+    font-style: normal
+
+
+.poppins-extralight 
+    font-family: "Poppins", sans-serif
+    font-weight: 200
+    font-style: normal
+
+
+.poppins-light 
+    font-family: "Poppins", sans-serif
+    font-weight: 300
+    font-style: normal
+
+
+.poppins-regular 
+    font-family: "Poppins", sans-serif
+    font-weight: 400
+    font-style: normal
+
+
+.poppins-medium 
+    font-family: "Poppins", sans-serif
+    font-weight: 500
+    font-style: normal
+
+
+.poppins-semibold 
+    font-family: "Poppins", sans-serif
+    font-weight: 600
+    font-style: normal
+
+
+.poppins-bold 
+    font-family: "Poppins", sans-serif
+    font-weight: 700
+    font-style: normal
+
+
+.poppins-extrabold 
+    font-family: "Poppins", sans-serif
+    font-weight: 800
+    font-style: normal
+
+
+.poppins-black 
+    font-family: "Poppins", sans-serif
+    font-weight: 900
+    font-style: normal
+
+
+.poppins-thin-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 100
+    font-style: italic
+
+
+.poppins-extralight-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 200
+    font-style: italic
+
+
+.poppins-light-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 300
+    font-style: italic
+
+
+.poppins-regular-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 400
+    font-style: italic
+
+
+.poppins-medium-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 500
+    font-style: italic
+
+
+.poppins-semibold-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 600
+    font-style: italic
+
+
+.poppins-bold-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 700
+    font-style: italic
+
+
+.poppins-extrabold-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 800
+    font-style: italic
+
+
+.poppins-black-italic 
+    font-family: "Poppins", sans-serif
+    font-weight: 900
+    font-style: italic
+
+
+//-------------
+// @font-face
+    // font-family: "Poppins", sans-serif
+    // font-weight: 100
+    // font-style: normal
+    // src: url('./../fonts/Poppins-Thin.ttf') format('truetype')
+
+
+
+body
+    font-weight: 400
+    font-style: normal
+    font-size: 14px
+    font-family: "Poppins", sans-serif
+
+a
+    color: #fff
+
+.wrapper
+    max-width: 1440px
+    margin: 0 auto
+
+.__container
+    max-width: 1198px
+    padding: 0 15px
+    margin: 0 auto
+// ------------------------
+.header
+    background-color: #181818
+    height: 90px
+.header>.__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+.header_list
+    display: flex
+    gap: 32px
+    align-items: center
+
+.header__btn
+    min-height: 42px
+    padding: 0 20px
+    display: flex
+    align-items: center
+    background-color: #fff
+    border-radius: 15px
+    font-size: 16px
+    cursor: pointer
+
+.header_link
+    font-size: 15px
+.main_section
+    position: relative
+    width: 100%
+    height: 100vh
+    padding: 0 0 40px 0
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        background: rgb(162,89,255,0)
+        background: linear-gradient(180deg, rgba(162,89,255,0) 0%, rgba(0,0,0,1) 75%)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 10
+.background_img_wrap
+    width: 100%
+    height: 100%
+    position: absolute
+.background_img
+    object-fit: cover
+    object-position: center
+    height: 100%
+    width: 100%
+
+.main_section_title
+    display: flex
+    flex-direction: column
+    align-items: center
+    // height: 100%
+    // justify-content: end
+    position: absolute
+    bottom: 140px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 15
+    max-width: 580px
+    // margin: 0 auto
+// ----------------------
+.background__info
+    display: flex
+    position: absolute
+    bottom: 100px
+    right: 40px
+    justify-content: end
+    z-index: 15
+    gap: 16px
+.background__info_item
+    display: flex
+    gap: 6px
+    span
+        color:#fff
+    img
+        // width: 16px
+        height: 16px
+.iso
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    border-radius: 5px
+    width: 32px
+    height: auto
+    background-color: #fff
+// ----------------------
+
+
+.burger
+    display: none
+.burger__btn
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 25px
+    width: 35px
+    span
+        width: 100%
+        height: 2px
+        background-color: #fff
+        display: block
+
+.main_section_title
+    h1
+        font-size: 54px
+        color: #fff
+        margin-bottom: 18px
+        text-align: center
+    p
+        font-size: 14px
+        color: $color-C0C0C0
+        text-align: center
+
+
+
+
+
+
+@import './_footer'
+@import './_media'
+
